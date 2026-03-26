@@ -4,13 +4,12 @@ from config.audio_config import MAX_PITCH, MIN_PITCH
 
 
 def extract_features(audio_chunk, sr=16000, n_mfcc=13):
-    # normalize audio
     audio_chunk = audio_chunk / (np.max(np.abs(audio_chunk)) + 1e-8)
 
-    # RMS energy
+    # RMS
     rms = float(np.sqrt(np.mean(audio_chunk**2)))
 
-    # pitch
+    # Pitch
     pitches = librosa.yin(audio_chunk, fmin=MIN_PITCH, fmax=MAX_PITCH, sr=sr)
     pitches = pitches[pitches > 0]
 
@@ -24,9 +23,41 @@ def extract_features(audio_chunk, sr=16000, n_mfcc=13):
     # ZCR
     zcr = float(np.mean(librosa.feature.zero_crossing_rate(audio_chunk)[0]))
 
-    # MFCCs
+    # MFCC
     mfccs = librosa.feature.mfcc(y=audio_chunk, sr=sr, n_mfcc=n_mfcc)
-    mfcc_mean = np.mean(mfccs, axis=1)
 
-    feature_vector = np.concatenate([mfcc_mean, [pitch_mean, pitch_std, zcr, rms]])
+    # Delta
+    mfcc_delta = librosa.feature.delta(mfccs)
+    mfcc_delta2 = librosa.feature.delta(mfccs, order=2)
+
+    # Stats
+    mfcc_mean = np.mean(mfccs, axis=1)
+    mfcc_std = np.std(mfccs, axis=1)
+
+    delta_mean = np.mean(mfcc_delta, axis=1)
+    delta_std = np.std(mfcc_delta, axis=1)
+
+    delta2_mean = np.mean(mfcc_delta2, axis=1)
+    delta2_std = np.std(mfcc_delta2, axis=1)
+
+    # Spectral features
+    spectral_centroid = float(
+        np.mean(librosa.feature.spectral_centroid(y=audio_chunk, sr=sr))
+    )
+    spectral_bandwidth = float(
+        np.mean(librosa.feature.spectral_bandwidth(y=audio_chunk, sr=sr))
+    )
+
+    feature_vector = np.concatenate(
+        [
+            mfcc_mean,
+            mfcc_std,
+            delta_mean,
+            delta_std,
+            delta2_mean,
+            delta2_std,
+            [pitch_mean, pitch_std, zcr, rms, spectral_centroid, spectral_bandwidth],
+        ]
+    )
+
     return feature_vector
