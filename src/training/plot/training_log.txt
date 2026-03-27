@@ -1,0 +1,60 @@
+Epoch 1: Train Loss 1.5201, Val Loss 1.3136, Val Acc 0.4656, LR 0.002458
+  Model saved with val acc 0.4656
+Epoch 2: Train Loss 1.3084, Val Loss 1.2530, Val Acc 0.4969, LR 0.002458
+  Model saved with val acc 0.4969
+Epoch 3: Train Loss 1.2418, Val Loss 1.2018, Val Acc 0.5189, LR 0.002458
+  Model saved with val acc 0.5189
+Epoch 4: Train Loss 1.2030, Val Loss 1.1823, Val Acc 0.5243, LR 0.002458
+  Model saved with val acc 0.5243
+Epoch 5: Train Loss 1.1708, Val Loss 1.1650, Val Acc 0.5304, LR 0.002458
+  Model saved with val acc 0.5304
+Epoch 6: Train Loss 1.1410, Val Loss 1.1663, Val Acc 0.5395, LR 0.002458
+  Model saved with val acc 0.5395
+Epoch 7: Train Loss 1.1172, Val Loss 1.1603, Val Acc 0.5376, LR 0.002458
+Epoch 8: Train Loss 1.0990, Val Loss 1.1564, Val Acc 0.5323, LR 0.002458
+Epoch 9: Train Loss 1.0802, Val Loss 1.1438, Val Acc 0.5430, LR 0.002458
+  Model saved with val acc 0.5430
+Epoch 10: Train Loss 1.0690, Val Loss 1.1358, Val Acc 0.5536, LR 0.002458
+  Model saved with val acc 0.5536
+Epoch 11: Train Loss 1.0425, Val Loss 1.1454, Val Acc 0.5515, LR 0.002458
+Epoch 12: Train Loss 1.0407, Val Loss 1.1409, Val Acc 0.5493, LR 0.002458
+Epoch 13: Train Loss 1.0064, Val Loss 1.1370, Val Acc 0.5482, LR 0.002458
+Epoch 14: Train Loss 1.0016, Val Loss 1.1364, Val Acc 0.5520, LR 0.002458
+Epoch 15: Train Loss 0.9895, Val Loss 1.1303, Val Acc 0.5508, LR 0.002458
+Epoch 16: Train Loss 0.9836, Val Loss 1.1606, Val Acc 0.5433, LR 0.002458
+Epoch 17: Train Loss 0.9637, Val Loss 1.1547, Val Acc 0.5520, LR 0.002458
+Epoch 18: Train Loss 0.9531, Val Loss 1.1491, Val Acc 0.5494, LR 0.002458
+Epoch 19: Train Loss 0.9480, Val Loss 1.1546, Val Acc 0.5514, LR 0.002458
+Epoch 20: Train Loss 0.9315, Val Loss 1.1667, Val Acc 0.5529, LR 0.002458
+Epoch 21: Train Loss 0.9284, Val Loss 1.1432, Val Acc 0.5655, LR 0.001229
+  Model saved with val acc 0.5655
+Epoch 22: Train Loss 0.8726, Val Loss 1.1405, Val Acc 0.5728, LR 0.001229
+  Model saved with val acc 0.5728
+Epoch 23: Train Loss 0.8496, Val Loss 1.1390, Val Acc 0.5704, LR 0.001229
+Epoch 24: Train Loss 0.8345, Val Loss 1.1492, Val Acc 0.5663, LR 0.001229
+Epoch 25: Train Loss 0.8176, Val Loss 1.1521, Val Acc 0.5667, LR 0.001229
+Epoch 26: Train Loss 0.8116, Val Loss 1.1641, Val Acc 0.5644, LR 0.001229
+Epoch 27: Train Loss 0.8087, Val Loss 1.1669, Val Acc 0.5615, LR 0.000615
+Epoch 28: Train Loss 0.7785, Val Loss 1.1749, Val Acc 0.5672, LR 0.000615
+Epoch 29: Train Loss 0.7664, Val Loss 1.1773, Val Acc 0.5707, LR 0.000615
+Epoch 30: Train Loss 0.7645, Val Loss 1.1776, Val Acc 0.5705, LR 0.000615
+Epoch 31: Train Loss 0.7549, Val Loss 1.1729, Val Acc 0.5681, LR 0.000615
+Epoch 32: Train Loss 0.7492, Val Loss 1.1825, Val Acc 0.5672, LR 0.000615
+Epoch 33: Train Loss 0.7498, Val Loss 1.1907, Val Acc 0.5674, LR 0.000307
+Epoch 34: Train Loss 0.7383, Val Loss 1.1830, Val Acc 0.5669, LR 0.000307
+Epoch 35: Train Loss 0.7237, Val Loss 1.1972, Val Acc 0.5686, LR 0.000307
+Epoch 36: Train Loss 0.7194, Val Loss 1.2016, Val Acc 0.5644, LR 0.000307
+Epoch 37: Train Loss 0.7113, Val Loss 1.2082, Val Acc 0.5698, LR 0.000307
+Epoch 38: Train Loss 0.7165, Val Loss 1.1995, Val Acc 0.5698, LR 0.000307
+Epoch 39: Train Loss 0.7098, Val Loss 1.2054, Val Acc 0.5707, LR 0.000154
+Epoch 40: Train Loss 0.7083, Val Loss 1.2067, Val Acc 0.5684, LR 0.000154
+Epoch 41: Train Loss 0.7000, Val Loss 1.2070, Val Acc 0.5676, LR 0.000154
+Epoch 42: Train Loss 0.7017, Val Loss 1.2081, Val Acc 0.5698, LR 0.000154
+Epoch 43: Train Loss 0.7004, Val Loss 1.2091, Val Acc 0.5683, LR 0.000154
+Epoch 44: Train Loss 0.6961, Val Loss 1.2110, Val Acc 0.5705, LR 0.000154
+Epoch 45: Train Loss 0.6940, Val Loss 1.2136, Val Acc 0.5670, LR 0.000077
+Epoch 46: Train Loss 0.6871, Val Loss 1.2163, Val Acc 0.5669, LR 0.000077
+Epoch 47: Train Loss 0.6981, Val Loss 1.2143, Val Acc 0.5677, LR 0.000077
+Epoch 48: Train Loss 0.6880, Val Loss 1.2155, Val Acc 0.5711, LR 0.000077
+Epoch 49: Train Loss 0.6880, Val Loss 1.2179, Val Acc 0.5697, LR 0.000077
+Epoch 50: Train Loss 0.6964, Val Loss 1.2151, Val Acc 0.5705, LR 0.000077
